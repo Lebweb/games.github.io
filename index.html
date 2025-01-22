@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-games</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header center">
+        <img class="header__star1" src="img/star1.svg" alt="star">
+        <img class="header__star2" src="img/star2.svg" alt="star">
+        <img class="header__star3" src="img/star3.svg" alt="star">
+        <img class="header__star4" src="img/star4.svg" alt="star">
+        <img class="header__star5" src="img/star5.svg" alt="star">
+        <img class="header__dopstar" src="img/mobile/starmobiledop.svg" alt="star">
+        <div class="header__info">
+            <h1 class="header__heading">Добро пожаловать <br>на мой сайт мини-игр</h1>
+            <p class="header__description">Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай <b>«Поехали!»</b> и <b>приступай</b>.</p>
+            <button data-href="#about" class="header__button">Поехали!</button>
+            <button data-href="#mini-games" class="header__mobile-button">Поехали!</button>
+        </div>
+        <div class="header__backgroundintro">
+            <div class="header__banner">ВИКТОРИНА
+                <span><img src="img/starBanner.svg" alt="star"></span>УГАДАЙ ЧИСЛО
+                <span><img src="img/starBanner.svg" alt="star"></span>ПЕРЕВЕРНИ текст
+                <span><img src="img/starBanner.svg" alt="star"></span>ПРОСТАЯ АРИФМЕТИКА
+                <span><img src="img/starBanner.svg" alt="star"></span>КАМЕНЬ, НОЖНИЦЫ, БУМАГА
+                <span><img src="img/starBanner.svg" alt="star"></span>ГЕНЕРАТОР СЛУЧАЙНЫХ ЦВЕТОВ
+            </div>
+        </div>
+    </header>
+
+    <div class="about center">
+        <img  class="about__star1" src="img/imgBlock1/aboutstar1.svg" alt="star">
+        <img  class="about__star2" src="img/imgBlock1/aboutstar2.svg" alt="star">
+        <img  class="about__star3" src="img/imgBlock1/aboutstar3.svg" alt="star">
+        <h1 id="about" class="about__heading">Об играх</h1>
+        <h1 id="mini-games" class="about__mobile-head">Мини-игры</h1>
+        <p class="about__description">В моей коллекции представлено 6 игр на разные темы. <br>Игры несложные — в них может поиграть каждый.<br> Все игры доступны для пользования.</p>
+        <div class="about-box">
+            <div class="about-box__cart">
+                <a class="about-box__link1" href="#game1">
+                     <img class="about-box__img" src="img/imgBlock1/cart1.svg" alt="cardcover">
+                     <div class="about-box__info">
+                        <p class="about-box__game">Игра № 1</p>
+                        <h2 class="about-box__headgame">Угадай число</h2>
+                        <p class="about-box__descmobile">Попробуй угадать случайное <br>число от 1 до 100.</p>
+                        <button onclick="randomNumber()" class="about-box__buttonmobile">Играть!</button>
+                    </div>
+                 </a>
+            </div>
+
+            <div class="about-box__cart about-box__cart_big about-box__cart_mobile">
+                <a class="about-box__link2" href="#game2">
+                     <img class="about-box__img" src="img/imgBlock1/cart2.svg" alt="cardcover">
+                     <div class="about-box__info">
+                        <p class="about-box__game">Игра № 2</p>
+                        <h2 class="about-box__headgame">Простая арифметика</h2>
+                        <p class="about-box__descmobile">Попробуй решить простые арифметические задачи.</p>
+                        <button class="about-box__buttonmobile">Играть!</button>
+                    </div>
+                 </a>
+            </div>
+
+            <div class="about-box__cart about-box__cart_mobile">
+                <a class="about-box__link3" href="#game3">
+                     <img class="about-box__img" src="img/imgBlock1/cart3.svg" alt="cardcover">
+                     <div class="about-box__info">
+                        <p class="about-box__game">Игра № 3</p>
+                        <h2 class="about-box__headgame">Переверни текст</h2>
+                        <p class="about-box__descmobile">Попробуй ввести текст, который будет перевернут.</p>
+                        <button class="about-box__buttonmobile">Играть!</button>
+                    </div>
+                 </a>
+            </div>
+
+            <div class="about-box__cart about-box__cart_superbig about-box__cart_mobilebig">
+                <a class="about-box__link4" href="#game5">
+                    <div class="about-box__punch-block">
+                        <img class="about-box__img" src="img/imgBlock1/cart4.svg" alt="cardcover">
+                        <img class="about-box__punch" src="img/imgBlock1/punch.png" alt="punch">
+                        <div class="about-box__info">
+                            <p class="about-box__game">Игра № 4</p>
+                            <h2 class="about-box__headgame">Камень, <br>ножницы,<br> бумага</h2>
+                            <p class="about-box__descmobile">Сыграй в популярную игру<br> против компьютера.</p>
+                            <button class="about-box__buttonmobile">Играть!</button>
+                        </div>
+                    </div>
+                 </a>
+            </div>
+
+            <div class="about-box__cart about-box__cart_bigbottom">
+                <a class="about-box__link5" href="#game4">
+                     <img class="about-box__img" src="img/imgBlock1/cart5.svg" alt="cardcover">
+                     <div class="about-box__info">
+                        <p class="about-box__game">Игра № 5</p>
+                        <h2 class="about-box__headgame about-box__headgame_mobilebig">Простая<br> викторина</h2>
+                        <h2 class="about-box__headgame about-box__headgame_mobile">Викторина</h2>
+                        <p class="about-box__descmobile">Отвечай на вопросы викторины<br> с вариантами ответов.</p>
+                        <button class="about-box__buttonmobile">Играть!</button>
+                    </div>
+                 </a>
+            </div>
+
+            <div class="about-box__cart about-box__cart_superbig about-box__cart_mobilesuperbig">
+                <a class="about-box__link6" href="#game6">
+                     <img class="about-box__img" src="img/imgBlock1/cart6.svg" alt="cardcover">
+                     <div class="about-box__info">
+                        <p class="about-box__game">Игра № 6</p>
+                        <h2 class="about-box__headgame">Генератор случайных<br> цветов</h2>
+                        <p class="about-box__descmobile">Игра, в которой при клике<br> на кнопку фон страницы<br> меняется на случайный.</p>
+                        <button class="about-box__buttonmobile">Играть!</button>
+                    </div>
+                 </a>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="mini-games center">
+        <img class="mini-games__star1" src="img/imgminigames/minigamesstar1.svg" alt="star">
+        <img class="mini-games__star2" src="img/imgminigames/minigamesstar2.svg" alt="star">
+        <img class="mini-games__star3" src="img/imgminigames/minigamesstar3.svg" alt="star">
+        <img class="mini-games__star4" src="img/imgminigames/minigamesstar4.svg" alt="star">
+        <h1 class="mini-games__heading">Мини-игры</h1>
+        <div class="catalog-games">
+
+            <div id="game1" class="catalog-games__gameleft">
+                <div class="catalog-games__info">
+                    <h2 class="catalog-games__headgame">Угадай число</h2>
+                    <p class="catalog-games__description">Попробуй угадать случайное<br> число от 1 до 100.</p>
+                    <button onclick="randomNumber()" class="catalog-games__button">Играть!</button>
+                </div>
+                <img class="catalog-games__img" src="img/imgminigames/game1.jpeg" alt="game">
+            </div>
+
+            <div id="game2" class="catalog-games__gameright">
+                <img class="catalog-games__img" src="img/imgminigames/game2.jpeg" alt="game">
+                <div class="catalog-games__info">
+                    <h2 class="catalog-games__headgame">Простая арифметика</h2>
+                    <p class="catalog-games__description">Попробуй решить простые<br> арифметические задачи.</p>
+                    <button onclick="randomTask()" class="catalog-games__button">Играть!</button>
+                </div>
+            </div>
+
+            <div id="game3" class="catalog-games__gameleft">
+                <div class="catalog-games__info">
+                    <h2 class="catalog-games__headgame">Переверни текст</h2>
+                    <p class="catalog-games__description">Попробуй ввести текст, который<br> будет перевернут.</p>
+                    <button onclick="reverseText()" class="catalog-games__button">Играть!</button>
+                </div>
+                <img class="catalog-games__img" src="img/imgminigames/game3.jpeg" alt="game">
+            </div>
+
+            <div id="game4" class="catalog-games__gameright">
+                <img class="catalog-games__img" src="img/imgminigames/game4.jpeg" alt="game">
+                <div class="catalog-games__info">
+                    <h2 class="catalog-games__headgame">Викторина</h2>
+                    <p class="catalog-games__description">Отвечай на вопросы викторины<br> с вариантами ответов.</p>
+                    <button onclick="quiz()" class="catalog-games__button">Играть!</button>
+                </div>
+            </div>
+
+            <div id="game5" class="catalog-games__gameleft">
+                <div class="catalog-games__info">
+                    <h2 class="catalog-games__headgame">Камень, <br>ножницы, <br>бумага</h2>
+                    <p class="catalog-games__description">Сыграй в популярную игру <br>против компьютера.</p>
+                    <button onclick="rockScissorsPaper()" class="catalog-games__button">Играть!</button>
+                </div>
+                <img class="catalog-games__img" src="img/imgminigames/game5.jpeg" alt="game">
+            </div>
+
+            <div id="game6" class="catalog-games__gameright">
+                <img class="catalog-games__img" src="img/imgminigames/game6.jpeg" alt="game">
+                <div class="catalog-games__info">
+                    <h2 class="catalog-games__headgame">Генератор <br>случайных <br>цветов</h2>
+                    <p class="catalog-games__description">Игра, в которой при клике на кнопку <br>фон страницы меняется на случайный.</p>
+                    <button class="catalog-games__button catalog-games__button_generator">Играть!</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="footer">
+        <h1 class="footer__security">Все права защищены.</h1>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
